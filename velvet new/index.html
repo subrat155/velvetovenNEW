@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velvet Oven </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+       
+    </style>
+</head>
+<body>
+    <!-- Header -->
+
+<!-- PAPU'S RESPONSIVE AUG 20 -->
+    <header>
+        <nav class="navbar flex between wrapper">
+            <div class="more">
+                <img src="logo.png" alt="Velvet Oven Logo" width="90" height="90">
+                <a href="#" class="logo">V<span class="no">e</span>lv<span class="no">e</span>t<span class="ni">Oven</span></a>
+            </div>
+
+            <!-- Desktop Menu -->
+            <ul class="navlist flex">
+                <li><a href="#"><i class="fa-solid fa-house-chimney"></i> Home</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#offers">Offers</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#"><i class="fa-solid fa-address-book"></i> Contact</a></li>
+            </ul>
+
+            <div class="desktop-action flex gap2">
+                <a href="#" class="cart-icon" id="cartButton">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <span class="cart-value">0</span>
+                </a>
+                <a href="#" class="btn">Sign In <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <ul class="mobile-menu">
+                <li><a href="#"><i class="fa-solid fa-house-chimney"></i> Home</a></li>
+                <li><a href="#categories"><i class="fa-solid fa-bars"></i> Categories</a></li>
+                <li><a href="#offers">Offers</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#"><i class="fa-solid fa-address-book"></i> Contact</a></li>
+                <li class="mobile-cart"><a href="#"><i class="fa-solid fa-briefcase"></i> Cart <span class="cart-value">0</span></a></li>
+                <li><a href="#" class="btn">Sign In <i class="fa-solid fa-arrow-right"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="wrapper flex hero-container">
+                <div class="hero-content">
+                    <h1>Delicious Baked Goods <span>Made With Love</span></h1>
+                    <p>Indulge in our handcrafted cakes, pastries, cookies and more made with the finest ingredients and a whole lot of love. Perfect for every occasion <br><span class="mu">(Call Us-+91 8260599436)</span> </p>
+                    <div class="hero-buttons">
+                        <a href="#categories" class="btn btn-primary">Order Now</a>
+                        <a href="#categories" class="btn btn-secondary">View Menu</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="cake1.png" alt="Delicious Cake" class="cake-img">
+                    <div class="discount-badge">
+                        <span>Upto 50% OFF</span>
+                        <span>First Order*</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories Section -->
+        <section class="categories" id="categories">
+            <div class="wrapper">
+                <h2 class="section-title">Our Categories</h2>
+                <p class="section-subtitle">Explore our wide range of baked delights, from cakes to cookies and everything in between</p>
+                
+                <div class="category-tabs">
+                    <div class="category-tab active" data-category="cakes">Cakes</div>
+                    <div class="category-tab" data-category="Petits">Premium Cakes</div>
+                    <div class="category-tab" data-category="sandwiches">Sandwiches</div>
+                    <div class="category-tab" data-category="cookies">Cookies</div>
+                </div>
+                
+                <!-- Cakes Category -->
+                <div class="category-content active" id="cakes-content">
+                    <div class="items-grid">
+                        <!-- Cake items -->
+                        <div class="item-card">
+                            <div class="item-img-container">
+                                <img src="cake3.png" alt="Chocolate Cake">
+                            </div>
+                            <div class="item-info">
+                                <h3>Chocolate Dream</h3>
+                                <p>Rich chocolate cake with fudge filling and chocolate ganache</p>
+                                <div class="item-price">
+                                    <span class="price">₹ 2599</span>
+                                    <button class="add-to-cart" data-id="1" data-name="Chocolate Dream" data-price="599" data-image="cake3.png">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="item-card">
+                            <div class="item-img-container">
+                                <img src="cake4.png" alt="Vanilla Cake">
+                            </div>
+                            <div class="item-info">
+                                <h3>Vanilla Bliss</h3>
+                                <p>Classic vanilla cake with buttercream frosting</p>
+                                <div class="item-price">
+                                    <span class="price">₹ 1499</span>
+                                    <button class="add-to-cart" data-id="2" data-name="Vanilla Bliss" data-price="499" data-image="cake4.png">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="item-card">
+                            <div class="item-img-container">
+                                <img src="cake6.png" alt="Red Velvet Cake">
+                            </div>
+                            <div class="item-info">
+                                <h3>Red Velvet</h3>
+                                <p>Southern classic with cream cheese frosting</p>
+                                <div class="item-price">
+                                    <span class="price">₹ 1649</span>
+                                    <button class="add-to-cart" data-id="3" data-name="Red Velvet" data-price="649" data-image="cake6.png">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-card">
+                            <div class="item-img-container">
+                                <img src="cake9.png" alt="Chocolate Éclairs">
+                            </div>
+                            <div class="item-info">
+                                <h3>Chocolate Éclairs</h3>
+                                <p>Cream filled pastry with chocolate glaze</p>
+                                <div class="item-price">
+                                    <span class="price">₹ 2299</span>
+                                    <button class="add-to-cart" data-id="5" data-name="Chocolate Éclairs" data-price="299" data-image="cake9.png">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-card">
+                            <div class="item-img-container">
+                                <img src="cake7.png" alt="Cream Puffs">
+                            </div>
+                            <div class="item-info">
+                                <h3>Cream Puffs</h3>
+                                <p>Choux pastry filled with vanilla cream</p>
+                                <div class="item-price">
+                                    <span class="price">₹ 1279</span>
+                                    <button class="add-to-cart" data-id="8" data-name="Cream Puffs" data-price="279" data-image="cake7.png">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-card">
+                            <div class="item-img-container">
+                                <img src="cake2.png" alt="Chocolate Éclairs">
+                            </div>
+                            <div class="item-info">
+                                <h3>Chocolate Éclairs</h3>
+                                <p>Cream filled pastry with chocolate glaze</p>
+                                <div class="item-price">
+                                    <span class="price">₹ 2299</span>
+                                    <button class="add-to-cart" data-id="5" data-name="Chocolate Éclairs" data-price="299" data-image="cake9.png">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-card">
+                            <div class="item-img-container">
+                                <img src="cake8.png" alt="Carrot Cake">
+                            </div>
+                            <div class="item-info">
+                                <h3>Carrot Cake</h3>
+                                <p>Spiced carrot cake with cream cheese frosting and walnuts</p>
+                                <div class="item-price">
+                                    <span class="price">₹ 3549</span>
+                                    <button class="add-to-cart" data-id="4" data-name="Carrot Cake" data-price="549" data-image="cake8.png">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Petits Fours Category -->
+                <div class="category-content" id="Petits-content">
+                    <div class="items-grid">
+                        <!-- Petits items -->
+                        <div class="item-card">
+                            <div class="item-img-container">
+                                <img src="cake9.png" alt="Chocolate Éclairs">
+                            </div>
+                            <div class="item-info">
+                                <h3>Chocolate Éclairs</h3>
+                                <p>Cream filled pastry with chocolate glaze</p>
+                                <div class="item-price">
+                                    <span class="price">₹ 2299</span>
+                                    <button class="add-to-cart" data-id="5" data-name="Chocolate Éclairs" data-price="299" data-image="cake9.png">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="item-card">
+                            <div class="item-img-container">
+                                <img src="cake2.png" alt="Fruit Tarts">
+                            </div>
+                            <div class="item-info">
+                                <h3>Fruit Tarts</h3>
+                                <p>Buttery crust with custard and fresh fruits</p>
+                                <div class="item-price">
+                                    <span class="price">₹ 1349</span>
+                                    <button class="add-to-cart" data-id="6" data-name="Fruit Tarts" data-price="349" data-image="cake2.png">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="item-card">
+                            <div class="item-img-container">
+                                <img src="cake1.png" alt="Macarons">
+                            </div>
+                            <div class="item-info">
+                                <h3>Macarons</h3>
+                                <p>French almond meringue cookies with ganache</p>
+                                <div class="item-price">
+                                    <span class="price">₹ 3399</span>
+                                    <button class="add-to-cart" data-id="7" data-name="Macarons" data-price="399" data-image="cake1.png">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="item-card">
+                            <div class="item-img-container">
+                                <img src="cake7.png" alt="Cream Puffs">
+                            </div>
+                            <div class="item-info">
+                                <h3>Cream Puffs</h3>
+                                <p>Choux pastry filled with vanilla cream</p>
+                                <div class="item-price">
+                                    <span class="price">₹ 1279</span>
+                                    <button class="add-to-cart" data-id="8" data-name="Cream Puffs" data-price="279" data-image="cake7.png">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Sandwiches Category -->
+                <div class="category-content" id="sandwiches-content">
+                    <div class="items-grid">
+                        <!-- Sandwich items -->
+                        <div class="item-card">
+                            <div class="item-img-container">
+                                <img src="sand.png" alt="Club Sandwich">
+                            </div>
+                            <div class="item-info">
+                                <h3>Club Sandwich</h3>
+                                <p>Triple decker with turkey, bacon and veggies</p>
+                                <div class="item-price">
+                                    <span class="price">₹ 249</span>
+                                    <button class="add-to-cart" data-id="9" data-name="Club Sandwich" data-price="249" data-image="sand.png">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-card">
+                            <div class="item-img-container">
+                                <img src="sand3.png" alt="Club Sandwich">
+                            </div>
+                            <div class="item-info">
+                                <h3>Club Sandwich</h3>
+                                <p>Triple decker with turkey, bacon and veggies</p>
+                                <div class="item-price">
+                                    <span class="price">₹ 149</span>
+                                    <button class="add-to-cart" data-id="9" data-name="Club Sandwich" data-price="149" data-image="sand3.png">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-card">
+                            <div class="item-img-container">
+                                <img src="sand2.png" alt="Club Sandwich">
+                            </div>
+                            <div class="item-info">
+                                <h3>Club Sandwich</h3>
+                                <p>Triple decker with turkey, bacon and veggies</p>
+                                <div class="item-price">
+                                    <span class="price">₹ 349</span>
+                                    <button class="add-to-cart" data-id="9" data-name="Club Sandwich" data-price="349" data-image="sand2.png">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-card">
+                            <div class="item-img-container">
+                                <img src="sand4.png" alt="Club Sandwich">
+                            </div>
+                            <div class="item-info">
+                                <h3>Club Sandwich</h3>
+                                <p>Triple decker with turkey, bacon and veggies</p>
+                                <div class="item-price">
+                                    <span class="price">₹ 249</span>
+                                    <button class="add-to-cart" data-id="9" data-name="Club Sandwich" data-price="249" data-image="sand4.png">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="item-card">
+                            <div class="item-img-container">
+                                <img src="sand2.png" alt="Veggie Delight">
+                            </div>
+                            <div class="item-info">
+                                <h3>Veggie Delight</h3>
+                                <p>Fresh vegetables with hummus spread</p>
+                                <div class="item-price">
+                                    <span class="price">₹ 199</span>
+                                    <button class="add-to-cart" data-id="10" data-name="Veggie Delight" data-price="199" data-image="sand2.png">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="item-card">
+                            <div class="item-img-container">
+                                <img src="sand3.png" alt="Chicken Salad Croissant">
+                            </div>
+                            <div class="item-info">
+                                <h3>Chicken Salad Croissant</h3>
+                                <p>Flaky croissant with creamy chicken salad</p>
+                                <div class="item-price">
+                                    <span class="price">₹ 279</span>
+                                    <button class="add-to-cart" data-id="11" data-name="Chicken Salad Croissant" data-price="279" data-image="sand3.png">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="item-card">
+                            <div class="item-img-container">
+                                <img src="sand4.png" alt="BLT Sandwich">
+                            </div>
+                            <div class="item-info">
+                                <h3>BLT Sandwich</h3>
+                                <p>Classic bacon, lettuce and tomato</p>
+                                <div class="item-price">
+                                    <span class="price">₹ 229</span>
+                                    <button class="add-to-cart" data-id="12" data-name="BLT Sandwich" data-price="229" data-image="sand4.png">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Cookies Category -->
+                <div class="category-content" id="cookies-content">
+                    <div class="items-grid">
+                        <!-- Cookie items -->
+                        <div class="item-card">
+                            <div class="item-img-container">
+                                <img src="cooki3.png" alt="Chocolate Chip Cookies">
+                            </div>
+                            <div class="item-info">
+                                <h3>Chocolate Chip Cookies</h3>
+                                <p>Classic cookie with milk chocolate chunks</p>
+                                <div class="item-price">
+                                    <span class="price">₹ 199</span>
+                                    <button class="add-to-cart" data-id="13" data-name="Chocolate Chip Cookies" data-price="199" data-image="cooki3.png">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="item-card">
+                            <div class="item-img-container">
+                                <img src="cooki2.png" alt="Oatmeal Raisin Cookies">
+                            </div>
+                            <div class="item-info">
+                                <h3>Oatmeal Raisin Cookies</h3>
+                                <p>Hearty oatmeal cookies with plump raisins</p>
+                                <div class="item-price">
+                                    <span class="price">₹ 99</span>
+                                    <button class="add-to-cart" data-id="14" data-name="Oatmeal Raisin Cookies" data-price="99" data-image="cooki2.png">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+<div class="item-card">
+                            <div class="item-img-container">
+                                <img src="cooki4.png" alt="Oatmeal Raisin Cookies">
+                            </div>
+                            <div class="item-info">
+                                <h3>Oatmeal Raisin Cookies</h3>
+                                <p>Hearty oatmeal cookies with plump raisins</p>
+                                <div class="item-price">
+                                    <span class="price">₹ 279</span>
+                                    <button class="add-to-cart" data-id="14" data-name="Oatmeal Raisin Cookies" data-price="279" data-image="cooki4.png">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-card">
+                            <div class="item-img-container">
+                                <img src="cooki2.png" alt="Oatmeal Raisin Cookies">
+                            </div>
+                            <div class="item-info">
+                                <h3>Oatmeal Raisin Cookies</h3>
+                                <p>Hearty oatmeal cookies with plump raisins</p>
+                                <div class="item-price">
+                                    <span class="price">₹ 179</span>
+                                    <button class="add-to-cart" data-id="14" data-name="Oatmeal Raisin Cookies" data-price="179" data-image="cooki2.png">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-card">
+                            <div class="item-img-container">
+                                <img src="cooki3.png" alt="Oatmeal Raisin Cookies">
+                            </div>
+                            <div class="item-info">
+                                <h3>Oatmeal Raisin Cookies</h3>
+                                <p>Hearty oatmeal cookies with plump raisins</p>
+                                <div class="item-price">
+                                    <span class="price">₹ 159</span>
+                                    <button class="add-to-cart" data-id="14" data-name="Oatmeal Raisin Cookies" data-price="159" data-image="cooki3.png">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-card">
+                            <div class="item-img-container">
+                                <img src="cooki1.png" alt="Oatmeal Raisin Cookies">
+                            </div>
+                            <div class="item-info">
+                                <h3>Oatmeal Raisin Cookies</h3>
+                                <p>Hearty oatmeal cookies with plump raisins</p>
+                                <div class="item-price">
+                                    <span class="price">₹ 129</span>
+                                    <button class="add-to-cart" data-id="14" data-name="Oatmeal Raisin Cookies" data-price="129" data-image="cooki2.png">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-card">
+                            <div class="item-img-container">
+                                <img src="cooki2.png" alt="Oatmeal Raisin Cookies">
+                            </div>
+                            <div class="item-info">
+                                <h3>Oatmeal Raisin Cookies</h3>
+                                <p>Hearty oatmeal cookies with plump raisins</p>
+                                <div class="item-price">
+                                    <span class="price">₹ 179</span>
+                                    <button class="add-to-cart" data-id="14" data-name="Oatmeal Raisin Cookies" data-price="179" data-image="cooki2.png">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-card">
+                            <div class="item-img-container">
+                                <img src="cooki3.png" alt="Oatmeal Raisin Cookies">
+                            </div>
+                            <div class="item-info">
+                                <h3>Oatmeal Raisin Cookies</h3>
+                                <p>Hearty oatmeal cookies with plump raisins</p>
+                                <div class="item-price">
+                                    <span class="price">₹ 79</span>
+                                    <button class="add-to-cart" data-id="14" data-name="Oatmeal Raisin Cookies" data-price="79" data-image="cooki3.png">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item-card">
+                            <div class="item-img-container">
+                                <img src="cooki4.png" alt="Double Chocolate Cookies">
+                            </div>
+                            <div class="item-info">
+                                <h3>Double Chocolate Cookies</h3>
+                                <p>Chocolate cookie with white chocolate chips</p>
+                                <div class="item-price">
+                                    <span class="price">₹ 219</span>
+                                    <button class="add-to-cart" data-id="15" data-name="Double Chocolate Cookies" data-price="219" data-image="cooki4.png">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="item-card">
+                            <div class="item-img-container">
+                                <img src="cooki1.png" alt="Sugar Cookies">
+                            </div>
+                            <div class="item-info">
+                                <h3>Sugar Cookies</h3>
+                                <p>Buttery cookies with royal icing</p>
+                                <div class="item-price">
+                                    <span class="price">₹ 159</span>
+                                    <button class="add-to-cart" data-id="16" data-name="Sugar Cookies" data-price="159" data-image="cooki1.png">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Special Offers -->
+        <section class="special-offers" id="offers">
+            <div class="wrapper">
+                <h2 class="section-title">Special Offers</h2>
+                <p class="section-subtitle">Limited time deals you can't resist</p>
+                
+                <div class="offers-slider">
+                    <div class="offer-card">
+                        <div class="offer-img">
+                            <img src="cake4.png" alt="Birthday Bundle">
+                        </div>
+                        <div class="offer-details">
+                            <h3>Birthday Bundle</h3>
+                            <p class="offer-price"><span class="original-price">₹2799</span>₹1899</p>
+                            <p class="offer-desc">Cake + 12 cupcakes + free delivery</p>
+                            <button class="btn offer-btn">Grab Offer</button>
+                        </div>
+                    </div>
+                    
+                    <div class="offer-card">
+                        <div class="offer-img">
+                            <img src="cake10.png" alt="Wedding Special">
+                        </div>
+                        <div class="offer-details">
+                            <h3>Wedding Special</h3>
+                            <p class="offer-price"><span class="original-price">₹2599</span> ₹2299</p>
+                            <p class="offer-desc">3-tier cake + cake stand + free setup</p>
+                            <button class="btn offer-btn">Grab Offer</button>
+                        </div>
+                    </div>
+                    
+                    <div class="offer-card">
+                        <div class="offer-img">
+                            <img src="sand3.png" alt="Petits Party Pack">
+                        </div>
+                        <div class="offer-details">
+                            <h3>Petits Party Pack</h3>
+                            <p class="offer-price"><span class="original-price">₹499</span> ₹199</p>
+                            <p class="offer-desc">2 assorted sandwiches + free box</p>
+                            <button class="btn offer-btn">Grab Offer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials" id="testimonials">
+            <div class="wrapper">
+                <h2 class="section-title">What Our Customers Say</h2>
+                <p class="section-subtitle">Hear from our happy customers</p>
+                
+                <div class="testimonial-cards">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"The best cake I've ever had! The chocolate cake was so moist and rich. Will definitely order again!"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="sn.png" alt="Customer">
+                            <div>
+                                <h4>Prasanta Sahoo</h4>
+                                <p>Regular Customer</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p class="testimonial-text">"Ordered a custom cake for my daughter's birthday and it was perfect! Exactly as I imagined. Great service!"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="deba.png" alt="Customer">
+                            <div>
+                                <h4>Debashish Mallick</h4>
+                                <p>First-time Customer</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"The cookies are to die for! So buttery and flavorful. The sandwich platters are perfect for office meetings too!"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="papu.png" alt="Customer">
+                            <div>
+                                <h4>Subrat Mehta</h4>
+                                <p>Cookie Lover</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="newsletter">
+            <div class="wrapper">
+                <div class="newsletter-container">
+                    <div class="newsletter-content">
+                        <h2>Subscribe to Our Newsletter</h2>
+                        <p>Get updates on new flavors, special offers, and baking tips!</p>
+                    </div>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="wrapper">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <img src="logo.png" alt="Velvet Oven" width="90" height="90">
+                        <a href="#" class="logo">V<span class="no">e</span>lv<span class="no">e</span>t <span class="ni">Oven</span></a>
+                    </div>
+                    <p>Baking happiness since 2023. We craft each item with love, using only the finest ingredients to create unforgettable flavors.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f">.</i></a>
+                        <a href="#"><i class="fab fa-instagram">.</i></a>
+                        <a href="#"><i class="fab fa-twitter">.</i></a>
+                        <a href="#"><i class="fab fa-pinterest-p">.</i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#categories">Categories</a></li>
+                        <li><a href="#offers">Offers</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Our Products</h3>
+                    <ul>
+                        <li><a href="#cakes-content">Cakes</a></li>
+                        <li><a href="#petits-content">Premium cakes</a></li>
+                        <li><a href="#sandwiches-content">Sandwiches</a></li>
+                        <li><a href="#cookies-content">Cookies</a></li>
+                        <li><a href="#">Seasonal Specials</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Gohira Square,near GEC,Khordha</li>
+                        <li><i class="fas fa-phone"></i>+91 8260599436</li>
+                        <li><i class="fas fa-envelope"></i> info@velvetoven.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Sat: 9AM - 9PM</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Velvet Oven. All Rights Reserved.</p>
+                <p>Designed By Subrat Kumar Rath</p>
+                <p>"Engineers Love To Eat"</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Page -->
+    <div class="cart-page" id="cartPage">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="close-cart" id="closeCart">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be added here dynamically -->
+            <div class="empty-cart" id="emptyCart">
+                <i class="fas fa-shopping-cart"></i>
+                <p>Your cart is empty</p>
+                <a href="#categories" class="btn">Start Shopping</a>
+            </div>
+        </div>
+        <div class="cart-summary" id="cartSummary" style="display: none;">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotal">₹ 0</span>
+            </div>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+     <div class="signin-page" id="signinPage">
+        <div class="signin-header">
+            <h2>Sign In to Your Account</h2>
+            <button class="close-signin" id="closeSignin">&times;</button>
+        </div>
+        <div class="signin-form">
+            <form id="signinForm">
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required placeholder="Your email address">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required placeholder="Your password">
+                </div>
+                <button type="submit" class="signin-btn">Sign In</button>
+            </form>
+            
+            <div class="signin-options">
+                <p>Or sign in with</p>
+                <div class="social-signin">
+                    <a href="#" class="social-btn fb-btn">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-btn google-btn">
+                        <i class="fab fa-google"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="signup-link">
+                <p>Don't have an account? <a href="#" id="signupLink">Sign up here</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Overlay -->
+    <!-- <div class="overlay" id="overlay"></div> -->
+    <script src="script.js"></script>
+</body>
+</html>
